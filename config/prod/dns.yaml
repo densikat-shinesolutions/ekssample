@@ -1,3 +1,0 @@
-template_path: templates/dns.yaml
-parameters:
-    zoneName: ekssample.shinesolutions.com
