@@ -1,0 +1,14 @@
+template_path: templates/eks.yaml
+parameters:
+    vpcId: !stack_output prod/vpc::VPCid
+    privSubA: !stack_output prod/vpc::privSubA
+    privSubB: !stack_output prod/vpc::privSubB
+    pubSubA: !stack_output prod/vpc::pubSubA
+    pubSubB: !stack_output prod/vpc::pubSubB
+    masterRoleArn: !stack_output prod/roles::RoleArn
+    workerGroupRole: !stack_output prod/roles::WorkerNodesRole
+    workerNodeNumber: "3"
+    workerNodeType: m4.large
+    clusterName: ekssample
+    amiId: ami-07580768e8538626f
+    keypair: central-densikat

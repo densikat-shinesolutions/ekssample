@@ -1,0 +1,8 @@
+template_path: templates/vpc.yaml
+parameters:
+    VPCName: ekssamplevpc
+    CidrBlock: 10.0.0.0/16
+    PublicA: 10.0.0.0/24
+    PublicB: 10.0.1.0/24
+    PrivateA: 10.0.2.0/24
+    PrivateB: 10.0.3.0/24
